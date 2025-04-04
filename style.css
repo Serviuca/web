@@ -506,6 +506,7 @@ h3{
     .container {
         padding: 10px;
         width: 90%; /* Ajusta mejor en móviles */
+        box-shadow: none !important;
     }
 
     .commentbox {
