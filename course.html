@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Serviuca</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <!----------Encabezado----------->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="imagenes/logoo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="about.html">NOSOTROS</a></li>
+                        <li><a href="course.html">TE GUIAMOS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                        <li><a href="actualizaciones.html">ACTUALIZACIONES</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Te guiamos</h1>
+
+        </section>
+<!----------Course----------->
+<section class="course">
+    <h1>Aqui tienes algunos ejemplos de servicio social</h1>
+    <p>Si tienes dudas, contactanos!</p>
+
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Elije el adecuado</h3>
+            <p>No tienes por que hacer algo que no te atrae o no te divierte!
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>¿No sabes con cual docente dirigirte? ven con nosotros!</h3>
+            <p>Con nosotros no solo obtendras una respuesta con experiencia por haber echo nuestro servicio,
+                tambien se sentira como hablar con un amigo!
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>No te quedes atras</h3>
+            <p>Tu servicio social es de suma importancia, no lo dejes pasar por alto
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!---------facilites-->
+
+<section class="facilities">
+    <h1>¿Te interesa alguno?</h1>
+    <p>Puedes obtener mas informacion contactandonos en la subpagina Contacto.</p>
+
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="imagenes/teleton.jpg" >
+            <h3>Sentro de rehabilitacion Teleton</h3>
+            <p>
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="imagenes/fores.jpg" >
+            <h3>Forestacion y Reforestacion DGETA</h3>
+            <p>
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="imagenes/jove.png" >
+            <h3>Jovenes en accion/Juventud con Actitud</h3>
+            <p>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="imagenes/promo.jpg" >
+            <h3>Promotores por la Paz</h3>
+            <p>
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="imagenes/anim.jpeg" >
+            <h3>Animales de Compañia</h3>
+            <p>
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="imagenes/edo.jpeg" >
+            <h3>Apoya niños del EDO</h3>
+            <p>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="imagenes/can.jpeg" >
+            <h3>Ayuda a mujeres con cancer de mama</h3>
+            <p>
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="imagenes/asis.png" >
+            <h3>Asistencia tecnica / DGETA</h3>
+            <p>
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="imagenes/dioc.jpg" >
+            <h3>Doctores de la risa</h3>
+            <p>
+            </p>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<section class="footer">
+   
+    <h4><a href="imagenes/PROGRAMAS DE SERVICIO SOCIAL BACHILLERATO.pdf" download="PROGRAMAS DE SERVICIO SOCIAL BACHILLERATO.pdf">
+        Descargar PDF Con lista completa de Servicios</a>
+    </h4>
+
+    <h4>Sobre nosotros</h4>
+    <p> En algun momento nosotros tambien sufrimos con nuestro servicio social <br>
+        queremos que tu no pases por lo mismo.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            
+            <i class="fa fa-envelope-o"></i>
+        </div>
+        <p>Echo con <i class="fa fa-heart-o"></i></p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------JavaScrip for toggel menu----------->
+        <script>
+
+            var navlinks = document.getElementById("navLinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+            }
+
+        </script>
+
+
+<!----------JavaScrip para boton que sube----------->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let btnSubir = document.getElementById("btnSubir");
+    
+        window.addEventListener("scroll", function () {
+            // Detectar si el usuario está en el final de la página
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                btnSubir.style.display = "flex"; // Mostrar botón
+            } else {
+                btnSubir.style.display = "none"; // Ocultar botón
+            }
+        });
+    
+        // Volver arriba con animación suave
+        btnSubir.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    });
+    </script>
+
+    </body>
+</html>

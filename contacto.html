@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Serviuca</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <!----------Encabezado----------->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="imagenes/logoo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="about.html">NOSOTROS</a></li>
+                        <li><a href="course.html">TE GUIAMOS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                        <li><a href="actualizaciones.html">ACTUALIZACIONES</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contactanos</h1>
+
+        </section>
+<!----------contactanos----------->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.653968337264!2d-101.01006342374285!3d25.41639102278603!
+    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868872949bba09ff%3A0x1e535baa3cf0c8e6!2sUniversidad%20Carolina!5e0!3m2!1ses!
+    2smx!4v1741985962898!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy=
+    "no-referrer-when-downgrade"></iframe>
+</section>
+
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Calz Antonio Narro 707, Zona Centro, 25030 Saltillo, Coah.</h5>
+                    <p>CX8V+H2 Saltillo, Coahuila de Zaragoza</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+528444141435</h5>
+                    <p>Nuestro numero telefonico</p>
+                    <h5>+528444141435</h5>
+                    <p>Numero de la Universidad Carolina</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-globe"></i>
+                <span>
+                    <h5>Pagina web de la Universidad Carolina</h5>
+                    <p><a href="https://www.ucarolina.edu.mx/">https://www.ucarolina.edu.mx/</a></p>
+                </span>
+            </div>
+        </div>
+        
+        <div class="contact-col">
+
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Ingresa tu nombre" required>
+                <input type="email" name="email" placeholder="Ingresa tu direccion de correo" required>
+                <input type="Text" name="subject" placeholder="Ingresa el tema" required>
+                <textarea rows="8" name="message" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Enviar</button>
+            </form>
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="footer">
+    <h4>Sobre nosotros</h4>
+    <p> En algun momento nosotros tambien sufrimos con nuestro servicio social <br>
+        queremos que tu no pases por lo mismo.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            
+            <i class="fa fa-envelope-o"></i>
+        </div>
+        <p>Echo con <i class="fa fa-heart-o"></i></p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------JavaScrip for toggel menu----------->
+        <script>
+
+            var navlinks = document.getElementById("navLinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+            }
+
+        </script>
+
+
+<!----------JavaScrip para boton que sube----------->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let btnSubir = document.getElementById("btnSubir");
+    
+        window.addEventListener("scroll", function () {
+            // Detectar si el usuario está en el final de la página
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                btnSubir.style.display = "flex"; // Mostrar botón
+            } else {
+                btnSubir.style.display = "none"; // Ocultar botón
+            }
+        });
+    
+        // Volver arriba con animación suave
+        btnSubir.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    });
+    </script>
+
+    </body>
+</html>

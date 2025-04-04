@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Serviuca</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="imagenes/logoo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="about.html">NOSOTROS</a></li>
+                        <li><a href="course.html">TE GUIAMOS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                        <li><a href="actualizaciones.html">ACTUALIZACIONES</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1> Actualizaciones</h1>
+                
+                <p>En este apartado podras encontrar actualizaciones como de la pagina<br>
+                     al igual de nuevas combocatorias de servicios, registros, etc.
+                </p>
+                <a href="contacto.html" class="hero-btn">¿Sabes algo mas<br> que nosotros no?</a>
+            </div>
+
+        </section>
+        <section class="testimonials">
+            <br>
+            <br>
+            <br>
+            <h1>Mantente al tanto!</h1>
+            <p>Queremos que te enteres de todo</p>
+        
+            <div class="actu">
+                <di class="testimonial-col">
+                    <img src="imagenes/Ulises.jpeg">
+                    <div>
+                        <h3>Ulises sanchez <P> Programador</P></h3>
+                        <p>
+                            Hola!, ServiUca ya se encuentra en la WEEEB!!!. 
+                        </p>
+                        
+                    </div>
+                </di>
+                <di class="testimonial-col">
+                    <img src="imagenes/Leo.jpeg">
+                    <div>
+                        <h3>Leonardo Eguia <P> Colaborador</P></h3>
+                        <p>
+                            Ya instalaron nuestra app?, ya esta disponible banda! 
+                        </p>
+                        
+                    </div>
+                </di>
+
+                <di class="testimonial-col">
+                    <img src="imagenes/alan.jpeg">
+                    <div>
+                        <h3>Alan Martin <P> Colaborador</P></h3>
+                        <p>
+                            Que buena pagina Locoooo! 
+                        </p>
+                        
+                    </div>
+                </di>
+            </div>
+        
+        
+        </section>
+
+
+
+
+
+    
+
+
+
+<!----------footer----------->
+<section class="footer">
+    <h4>Sobre nosotros</h4>
+    <p> En algun momento nosotros tambien sufrimos con nuestro servicio social <br>
+        queremos que tu no pases por lo mismo.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            
+            <i class="fa fa-envelope-o"></i>
+        </div>
+        <p>Echo con <i class="fa fa-heart-o"></i></p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------JavaScrip menu de cel----------->
+        <script>
+
+            var navlinks = document.getElementById("navLinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+            }
+
+        </script>
+
+<!----------JavaScrip para boton que sube----------->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let btnSubir = document.getElementById("btnSubir");
+    
+        window.addEventListener("scroll", function () {
+            // Detectar si el usuario está en el final de la página
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                btnSubir.style.display = "flex"; // Mostrar botón
+            } else {
+                btnSubir.style.display = "none"; // Ocultar botón
+            }
+        });
+    
+        // Volver arriba con animación suave
+        btnSubir.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    });
+    </script>
+    
+    
+
+
+<button id="btnSubir">↑</button>
+    </body>
+</html>
