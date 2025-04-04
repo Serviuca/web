@@ -4,6 +4,15 @@
    font-family: 'poppins', 'sans-serif';
       
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden; /* Evita el desbordamiento */
+}
+.container {
+    max-width: 100%; /* Asegura que no se pase del tamaño de la pantalla */
+}
 
 #btnSubir {
     position: fixed;
